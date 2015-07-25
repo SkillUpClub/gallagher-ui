@@ -1,7 +1,9 @@
 <h1>Photos Index</h1>
 
-<ul>
+<div class="pure-g">
   {{#each model as |photo|}}
-    <li>{{photo.title}}</li>
+    <div class="photo-box u-1 u-med-1-2 u-lrg-1-3">
+      <img src="http://lorempixel.com/355/200/sports/" alt="{{photo.title}}">
+    </div>
   {{/each}}
-</ul>
+</div>
