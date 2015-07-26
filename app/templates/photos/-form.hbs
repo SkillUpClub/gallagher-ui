@@ -1,0 +1,19 @@
+<form {{action 'save' on='submit'}}>
+  <p>
+    <label>
+      Title:
+      {{input valie=model.title}}
+    </label>
+  </p>
+  <p>
+    <label>
+      Description:
+      {{input valie=model.description}}
+    </label>
+  </p>
+  <p>
+    <input type='submit' value='Save'>
+    <button {{action 'cancel'}}>Cancel</button>
+  </p>
+
+</form>
