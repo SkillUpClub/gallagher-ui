@@ -7,7 +7,7 @@ export default Ember.Controller.extend({
     {
       get() {
         return !Ember.isEmpty(this.get('model.title')) &&
-               !Ember.isEmpty(this.get('model.title'));
+               !Ember.isEmpty(this.get('model.description'));
       }
     }
   ),
@@ -29,4 +29,4 @@ export default Ember.Controller.extend({
       return false;
     }
   }
-})
+});
