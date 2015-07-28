@@ -1,7 +1,15 @@
-<div class='pure-menu pure-menu-horizontal'>
-  {{link-to 'Gallagher' 'index' class='pure-menu-heading pure-menu-link'}}
-  <ul class='pure-menu-list'>
-    <li class="pure-menu-item">{{link-to 'Photos' 'photos' class='pure-menu-link'}}</li>
-    <li class="pure-menu-item">{{link-to 'New photo' 'photos.new' class='pure-menu-link'}}</li>
-  </ul>
+<div class="ui menu">
+  {{link-to 'Gallagher' 'index' class='header item'}}
+  {{link-to 'Photos' 'photos' class='item'}}
+  {{link-to 'New photo' 'photos.new' class='item'}}
+  <div class="right menu">
+    <div class="item">
+      <div class="ui action left icon input">
+        <i class="search icon"></i>
+        <input type="text" placeholder="Search">
+        <button class="ui button">Submit</button>
+      </div>
+    </div>
+    <a class="item">Link</a>
+  </div>
 </div>

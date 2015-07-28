@@ -1,9 +1,9 @@
 <h1>Photos Index</h1>
 
-<div class="pure-g">
+<div class='ui images'>
   {{#each model as |photo|}}
-    <div class="photo-box u-1 u-med-1-2 u-lrg-1-3">
+    {{#link-to 'photos.show' photo class='ui medium image'}}
       <img src="http://lorempixel.com/355/200/sports/" alt="{{photo.title}}">
-    </div>
+    {{/link-to}}
   {{/each}}
 </div>
