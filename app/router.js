@@ -7,7 +7,11 @@ var Router = Ember.Router.extend({
 
 Router.map(function() {
   this.route('photos', function() {
+    this.route('new');
 
+    this.route('show', {
+      path: ':photo_id'
+    });
   });
 });
 
